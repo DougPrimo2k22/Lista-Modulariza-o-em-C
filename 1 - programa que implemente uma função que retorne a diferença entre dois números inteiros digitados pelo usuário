@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int dif(int a, int b);
+
+int main(){
+    int a,b;
+    
+        printf("Digite dois valores inteiros para A e B: ");    /* Digite valores*/
+        scanf("%d%d",&a,&b);
+        
+        printf("A diferença entre A e B é igual: %d", dif(a,b));    /* Imprime resultado da diferença*/
+        
+        return 0;
+        
+        }
+    int dif(int a, int b){
+        int result;
+        
+        if (a > b){             /*Verifica se o primeiro valor é maior*/
+        result = a - b;
+        }else{
+            result = b - a;     /*Verifica se o segundo valor é maior*/
+        }
+        
+        return result;
+    }
