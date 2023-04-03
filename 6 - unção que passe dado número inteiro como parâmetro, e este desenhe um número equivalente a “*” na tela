@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int repetecaracter(int qnt ,char letra);
+
+int main(){
+    int qnt=1;
+    char letra;
+    
+    printf("Digite o caracter que deseja: ");                               //Inseri caracter a ser repetido
+    scanf("%c",&letra);
+    printf("Digite a quantidade de vezes que deseja repitir o %c: ",letra); //Inseri quantidade repetições
+    scanf("%d",&qnt);
+    while(qnt <= 0){                                                        //Verifica se o numeros de repetições é valido
+        printf("Valor invalido, digite novamente: ");
+        scanf("%d",&qnt);
+    }
+    repetecaracter(qnt,letra);
+    
+}
+    int repetecaracter(int qnt ,char letra){                                //Função que repete caracter
+       int i; 
+        for(i=1; i<=qnt;i++){
+            printf("\n%c",letra);
+        }
+    }
