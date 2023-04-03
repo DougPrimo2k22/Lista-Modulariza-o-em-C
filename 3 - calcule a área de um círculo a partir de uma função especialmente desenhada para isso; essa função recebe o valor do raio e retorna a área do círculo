@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+float areacirculo(float a);
+
+float main(){
+    float a;
+    
+        printf("Digite a raio do circulo: ");    /* Digite valores*/
+        scanf("%f",&a);
+        
+        printf("\nA area do circulo é %.2f", areacirculo(a));    /* Imprime resultado da função*/
+        return 0;
+        
+        }
+    float areacirculo(float a){
+        
+         return  (a*a) * 3.14;  //Calcula area do circulo
+          }
